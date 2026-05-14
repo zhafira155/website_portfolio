@@ -1,0 +1,1055 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Website Portfolio</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- font awwesom -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link cdn aos -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--  spline -->
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.12.90/build/spline-viewer.js"
+    ></script>
+    <!-- Devicon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
+
+  <body class="bg-[#150C21] h-[2000px]">
+    <!-- NAVBAR -->
+    <!-- NAVBAR -->
+    <nav
+      id="navbar"
+      class="fixed top-3 left-1/2 -translate-x-1/2 w-[95%] max-w-5xl z-50 transition-all duration-500"
+    >
+      <div
+        id="nav-bg"
+        class="absolute inset-0 mx-auto md:w-[60%] w-full h-[95%] bg-white/10 backdrop-blur-md border border-white/10 rounded-full transition-all duration-500 ease-out"
+      ></div>
+      <div
+        class="relative flex items-center justify-between px-5 md:px-10 h-14"
+      >
+        <h1 class="logo py-1 tracking-wide text-white text-2xl font-bold">
+          Zhira
+        </h1>
+        <ul id="menu" class="relative hidden md:flex gap-3 px-3 py-1">
+          <div
+            id="active-bg"
+            class="absolute top-1 left-0 h-[75%] bg-gradient-to-r from-[#3F07CE] via-[#6D28D9] to-[#9D59BB] shadow-lg rounded-full transition-all duration-500 ease-out"
+          ></div>
+          <li
+            class="nav-item relative z-10 px-4 py-1 text-white cursor-pointer transition duration-300 hover:text-purple-200"
+          >
+            <a href="index.html">Home</a>
+          </li>
+          <li
+            class="nav-item relative z-10 px-4 py-1 text-white cursor-pointer transition duration-300 hover:text-purple-200"
+          >
+            <a href="#about">About</a>
+          </li>
+          <li
+            class="nav-item relative z-10 px-4 py-1 text-white cursor-pointer transition duration-300 hover:text-purple-200"
+          >
+            <a href="#skills">Skills</a>
+          </li>
+
+          <li
+            class="nav-item relative z-10 px-4 py-1 text-white cursor-pointer transition duration-300 hover:text-purple-200"
+          >
+            <a href="#portfolio">Portfolio</a>
+          </li>
+        </ul>
+        <a
+          href="#contact"
+          class="hidden md:block font-bold text-white px-6 py-2 rounded-full bg-gradient-to-r from-[#E15CFF] to-[#8713B9] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(200,1,255,0.6)]"
+        >
+          Contact
+        </a>
+        <details class="relative md:hidden">
+          <summary class="list-none text-white text-3xl cursor-pointer">
+            ☰
+          </summary>
+          <div
+            class="absolute right-0 mt-4 w-60 bg-[#1b1330]/95 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden shadow-2xl"
+          >
+            <ul class="flex flex-col text-center py-3">
+              <li>
+                <a
+                  href="index.html"
+                  class="block py-3 text-white hover:bg-white/10 transition"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="block py-3 text-white hover:bg-white/10 transition"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#skills"
+                  class="block py-3 text-white hover:bg-white/10 transition"
+                >
+                  Skills
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#portfolio"
+                  class="block py-3 text-white hover:bg-white/10 transition"
+                >
+                  Portfolio
+                </a>
+              </li>
+              <li class="px-4 mt-3">
+                <a
+                  href="#contact"
+                  class="block py-3 rounded-full text-white font-semibold bg-gradient-to-r from-[#E15CFF] to-[#8713B9]"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </nav>
+    <!-- HERO SECTION -->
+    <section
+      class="relative h-screen flex items-center bg-gradient-to-br from-[#100322] via-[#1A0733] to-[#420D88] text-white"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 md:px-16 flex w-full items-center mt-10"
+      >
+        <div
+          class="w-1/2 relative z-20"
+          data-aos="fade-right"
+          data-aos-offset="80"
+          data-aos-duration="1200"
+        >
+          <p class="text-2 text-purple-600 mb-2 text-2xl">
+            <span id="gerakan"></span>
+          </p>
+
+          <h1 class="text-2 text-6xl leading-tight mb-4">
+            Junior Front End <br />
+            <span id="element" class="text-purple-400"></span>
+          </h1>
+          <p class="text-gray-300 mb-6 max-w-md text-justify">
+            Mastering HTML, CSS, JavaScript, as well as Bootstrap and Tailwind
+            CSS to build modern and responsive websites.
+          </p>
+          <div class="flex gap-4">
+            <a
+              href="#about"
+              class="border border-white px-5 py-2 rounded-lg hover:bg-purple-600 transition"
+            >
+              See my portfolio
+            </a>
+            <a
+              href="#contact"
+              class="border border-white px-5 py-2 rounded-lg hover:bg-purple-600 transition"
+            >
+              Contact me
+            </a>
+          </div>
+          <div class="flex items-center mt-3">
+            <!-- Instagram -->
+            <a
+              href="https://instagram.com/zhafira_53"
+              target="_blank"
+              class="w-12 h-12 flex items-center justify-center text-white text-2xl"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <!-- WhatsApp -->
+            <a
+              href="https://wa.me/6285866255626"
+              target="_blank"
+              class="w-12 h-12 flex items-center justify-center text-white text-2xl"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <!-- Email -->
+            <a
+              href="mailto:zhafiranadyasyfa@gmail.com"
+              class="w-12 h-12 flex items-center justify-center text-white text-2xl"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+            <!-- Facebook -->
+            <a
+              href="https://facebook.com/zhafiranadyasyfa"
+              target="_blank"
+              class="w-12 h-12 flex items-center justify-center text-white text-2xl"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Spline -->
+        <div class="w-1/2 flex items-center justify-center mt-10">
+          <div class="relative w-full max-w-[600px] aspect-square">
+            <div class="radial-glow"></div>
+            <spline-viewer
+              url="https://prod.spline.design/0HxnbaWwiSWfr3n9/scene.splinecode"
+              class="spline-object"
+            ></spline-viewer>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT-->
+    <section
+      class="background min-h-screen flex flex-col justify-center text-white relative overflow-hidden"
+      id="about"
+    >
+      <div
+        class="absolute top-[-120px] left-[-120px] w-[300px] h-[300px] bg-purple-500/20 rounded-full blur-3xl"
+      ></div>
+
+      <div
+        class="absolute bottom-[-150px] right-[-100px] w-[320px] h-[320px] bg-pink-500/20 rounded-full blur-3xl"
+      ></div>
+      <div
+        class="absolute inset-0 opacity-[0.03]"
+        style="
+          background-image:
+            linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+            linear-gradient(
+              90deg,
+              rgba(255, 255, 255, 0.08) 1px,
+              transparent 1px
+            );
+          background-size: 45px 45px;
+        "
+      ></div>
+      <div class="max-w-7xl mx-auto px-6 md:px-10 w-full relative z-10">
+        <h1
+          class="text-4xl md:text-5xl font-extrabold text-purple-300 text-center mt-12"
+          data-aos="fade-down"
+        >
+          About Me
+        </h1>
+        <p
+          class="text-purple-200 mb-10 md:mb-12 text-center"
+          data-aos="fade-down"
+          data-aos-delay="100"
+        >
+          Turning creativity into code
+        </p>
+        <div class="flex flex-col md:flex-row items-center w-full">
+          <div
+            class="w-full md:w-1/2 flex mb-12 ml-10 md:mb-0 justify-self-start"
+            data-aos="fade-right"
+          >
+            <div class="relative -translate-x-8">
+              <div
+                class="absolute inset-0 bg-purple-500/25 rounded-full blur-[70px]"
+              ></div>
+              <div class="radial-glow"></div>
+              <img
+                src="gambar/orang.png"
+                class="relative z-10 w-[250px] md:w-[380px] rounded-full mb-10"
+              />
+            </div>
+          </div>
+          <div
+            class="w-full md:w-3/4 flex justify-start mr-8 md:pl-10 mb-5"
+            data-aos="fade-left"
+          >
+            <div
+              class="relative w-full bg-white/10 backdrop-blur-xl p-8 md:p-12 rounded-2xl shadow-2xl border border-white/10 overflow-hidden"
+              data-aos="fade-up"
+            >
+              <div
+                class="absolute top-0 right-0 w-40 h-40 bg-purple-500/10 rounded-full blur-3xl"
+              ></div>
+              <div
+                class="absolute bottom-0 left-0 w-32 h-32 bg-pink-500/10 rounded-full blur-3xl"
+              ></div>
+              <div class="relative z-10">
+                <h2
+                  class="text-2 text-2xl md:text-3xl mb-5 text-purple-400 font-semibold tracking-widest"
+                >
+                  HI! I'M ZHAFIRA
+                </h2>
+                <p
+                  class="text-sm tracking-wider text-purple-200 leading-relaxed text-justify"
+                >
+                  I am a 15-year-old 10th-grade student majoring in Software
+                  Engineering (RPL 2) at SMKN 1 Tengaran, with a strong interest
+                  in website development. I work as a Junior Front-End Developer
+                  and am proficient in HTML, CSS, and JavaScript. I also use
+                  Tailwind CSS and Bootstrap to create responsive and visually
+                  appealing designs. Feel free to explore my recount text to
+                  learn more about my experiences and journey in web
+                  development.
+                </p>
+                <br />
+                <a
+                  href="recount-text.html"
+                  class="btn font-bold text-white px-6 py-2 rounded-lg bg-gradient-to-r from-[#E15CFF] to-[#8713B9] transition-all duration-300 ease-out hover:scale-105 hover:shadow-[0_0_20px_rgba(200,1,255,0.6)]"
+                >
+                  Recount text
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills -->
+    <section
+      class="bg-gradient-to-r from-[#1e0b3b] to-[#3b0f5c] py-20"
+      id="skills"
+    >
+      <div class="max-w-6xl mx-auto grid grid-cols-2 gap-10 px-10">
+        <div data-aos="fade-right" class="justify-self-start -ml-4">
+          <h1 class="text-6xl font-bold mb-4">
+            <span class="text-purple-400">My </span>
+            <span class="gradient-text"> Skills </span>
+          </h1>
+          <div class="w-20 h-1 bg-purple-400 mt-2 mb-6 rounded"></div>
+          <br />
+          <p class="text-xl text-gray-300 tracking-wider text-justify">
+            As a beginner in the field of Front-End Development, I continue to
+            learn HTML, CSS, JavaScript, as well as frameworks like Tailwind and
+            Bootstrap, and I am also starting to study UI design to create
+            attractive website appearances.
+          </p>
+          <br />
+          <div class="flex gap-10 mt-8 text-center">
+            <div>
+              <h2 class="text-3xl font-bold text-white">1+</h2>
+              <p class="text-purple-300 text-xl">Years Learning</p>
+            </div>
+            <div>
+              <h2 class="text-3xl font-bold text-white">5+</h2>
+              <p class="text-purple-300 text-xl">Projects</p>
+            </div>
+            <div>
+              <h2 class="text-3xl font-bold text-white">3+</h2>
+              <p class="text-purple-300 text-xl">Skills</p>
+            </div>
+          </div>
+        </div>
+        <!-- Progress bar -->
+        <div class="space-y-8">
+          <div
+            class="skill-item"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+            data-aos-delay="100"
+          >
+            <div class="flex items-center gap-4">
+              <i class="devicon-html5-plain colored skill-icon text-4xl"></i>
+
+              <div class="w-full">
+                <div class="flex items-center justify-between mb-2 text-sm">
+                  <span class="text-white font-medium skill-title">HTML</span>
+                  <span class="text-white font-semibold">75%</span>
+                </div>
+                <div class="bar-bg">
+                  <div class="progress-bar" data-progress="75"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="skill-item"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+            data-aos-delay="200"
+          >
+            <div class="flex items-center gap-4">
+              <i class="devicon-css3-plain colored skill-icon text-4xl"></i>
+              <div class="w-full">
+                <div class="flex items-center justify-between mb-2 text-sm">
+                  <span class="text-white font-medium skill-title">CSS</span>
+                  <span class="text-white font-semibold">75%</span>
+                </div>
+
+                <div class="bar-bg">
+                  <div class="progress-bar" data-progress="75"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="skill-item"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+            data-aos-delay="300"
+          >
+            <div class="flex items-center gap-4">
+              <i
+                class="devicon-bootstrap-plain colored skill-icon text-4xl"
+              ></i>
+              <div class="w-full">
+                <div class="flex items-center justify-between mb-2 text-sm">
+                  <span class="text-white font-medium skill-title"
+                    >Bootstrap</span
+                  >
+                  <span class="text-white font-semibold">70%</span>
+                </div>
+                <div class="bar-bg">
+                  <div class="progress-bar" data-progress="70"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="skill-item"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+            data-aos-delay="400"
+          >
+            <div class="flex items-center gap-4">
+              <i
+                class="devicon-tailwindcss-plain colored skill-icon text-4xl"
+              ></i>
+              <div class="w-full">
+                <div class="flex items-center justify-between mb-2 text-sm">
+                  <span class="text-white font-medium skill-title"
+                    >Tailwind</span
+                  >
+                  <span class="text-white font-semibold">64%</span>
+                </div>
+                <div class="bar-bg">
+                  <div class="progress-bar" data-progress="64"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="skill-item"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+            data-aos-delay="500"
+          >
+            <div class="flex items-center gap-4">
+              <i
+                class="devicon-javascript-plain colored skill-icon text-4xl"
+              ></i>
+              <div class="w-full">
+                <div class="flex items-center justify-between mb-2 text-sm">
+                  <span class="text-white font-medium skill-title">
+                    JavaScript
+                  </span>
+                  <span class="text-white font-semibold">45%</span>
+                </div>
+
+                <div class="bar-bg">
+                  <div class="progress-bar" data-progress="45"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="skill-item"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+            data-aos-delay="600"
+          >
+            <div class="flex items-center gap-4">
+              <i class="devicon-figma-plain colored skill-icon text-4xl"></i>
+              <div class="w-full">
+                <div class="flex items-center justify-between mb-2 text-sm">
+                  <span class="text-white font-medium skill-title">Figma</span>
+                  <span class="text-white font-semibold">70%</span>
+                </div>
+                <div class="bar-bg">
+                  <div class="progress-bar" data-progress="70"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <!-- Portfolio -->
+    <section class="py-15" id="portfolio">
+      <div class="text-center mb-10">
+        <div id="tab-title" data-aos="fade-up">
+          <h5
+            class="text-2 text-2xl font-semibold text-purple-300 uppercase mb-5 tracking-widest"
+          >
+            My Portfolio
+          </h5>
+          <h2
+            class="text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent"
+          >
+            PORTFOLIO
+          </h2>
+        </div>
+        <!-- BUTTON -->
+        <div class="flex justify-center mt-10" data-aos="fade-up">
+          <div
+            class="relative flex items-center gap-3 p-2 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-[0_0_35px_rgba(139,92,246,0.18)]"
+          >
+            <div
+              class="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-600/10 via-indigo-500/10 to-purple-600/10 blur-xl"
+            ></div>
+            <button
+              onclick="showTab('projects', event)"
+              class="tab-btn relative px-7 py-3 rounded-xl font-semibold text-sm tracking-wide text-white bg-gradient-to-r from-purple-600 to-indigo-600 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:scale-105 hover:shadow-purple-500/50 overflow-hidden"
+            >
+              <span class="relative z-10">Projects</span>
+              <span
+                class="absolute inset-0 -translate-x-full hover:translate-x-full transition duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent"
+              ></span>
+            </button>
+            <button
+              onclick="showTab('services', event)"
+              class="tab-btn relative px-7 py-3 rounded-xl font-semibold text-sm tracking-wide text-gray-300 bg-[#201c35]/70 border border-white/5 transition-all duration-300 hover:text-white hover:bg-[#2b2447] hover:scale-105 hover:shadow-lg hover:shadow-purple-500/20"
+            >
+              Services
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- PROJECTS -->
+      <div id="projects" class="tab-content">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-6 py-10"
+        >
+          <!-- CARD 1 -->
+          <div
+            class="card bg-[#1e1b2e] rounded-2xl overflow-hidden flex flex-col w-full max-w-[320px] mx-auto transition duration-500 transform hover:-translate-y-3 hover:scale-105 hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
+            data-aos="fade-up"
+            data-aos-duration="1400"
+            data-aos-delay="100"
+            data-aos-easing="ease-out-cubic"
+            data-aos-once="true"
+          >
+            <div class="w-full h-48 overflow-hidden">
+              <img
+                src="gambar/wastetoworth.png"
+                class="w-full h-full object-cover transition duration-700 hover:scale-110"
+              />
+            </div>
+
+            <div class="p-5 flex flex-col flex-grow">
+              <h3 class="text-white font-bold text-2xl">Waste to worth</h3>
+
+              <p
+                class="text-purple-200 text-sm mt-2 text-justify leading-relaxed"
+              >
+                a website that contains crafts made from processing plastic
+                waste
+              </p>
+
+              <div class="mt-auto flex justify-end pt-5">
+                <a
+                  href="https://zhafira155.github.io/waste-to-worth/"
+                  class="btn px-5 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:scale-105 transition"
+                >
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- CARD 2 -->
+          <div
+            class="card bg-[#1e1b2e] rounded-2xl overflow-hidden flex flex-col w-full max-w-[320px] mx-auto transition duration-500 transform hover:-translate-y-3 hover:scale-105 hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
+            data-aos="fade-up"
+            data-aos-duration="1400"
+            data-aos-delay="300"
+            data-aos-easing="ease-out-cubic"
+            data-aos-once="true"
+          >
+            <div class="w-full h-48 overflow-hidden">
+              <img
+                src="gambar/smk-digital.png"
+                class="w-full h-full object-cover transition duration-700 hover:scale-110"
+              />
+            </div>
+
+            <div class="p-5 flex flex-col flex-grow">
+              <h3 class="text-white font-bold text-2xl">SMK Digital</h3>
+              <p
+                class="text-purple-200 text-sm mt-2 text-justify leading-relaxed"
+              >
+                This website contains information about the digital vocational
+                school, the majors mastered
+              </p>
+              <div class="mt-auto flex justify-end pt-5">
+                <a
+                  href="https://zhafira155.github.io/XPPLG_2_SMK_Digital/"
+                  class="btn px-5 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:scale-105 transition"
+                >
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- CARD 3 -->
+          <div
+            class="card bg-[#1e1b2e] rounded-2xl overflow-hidden flex flex-col w-full max-w-[320px] mx-auto transition duration-500 transform hover:-translate-y-3 hover:scale-105 hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
+            data-aos="fade-up"
+            data-aos-duration="1400"
+            data-aos-delay="500"
+            data-aos-easing="ease-out-cubic"
+            data-aos-once="true"
+          >
+            <div class="w-full h-48 overflow-hidden">
+              <img
+                src="gambar/environment.jpg"
+                class="w-full h-full object-cover transition duration-700 hover:scale-110"
+              />
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+              <h3 class="text-white font-bold text-2xl">Environment</h3>
+              <p
+                class="text-purple-200 text-sm mt-2 text-justify leading-relaxed"
+              >
+                The website contains information about natural conditions,
+                environment issues, and solutions to preserve its
+                sustainability.
+              </p>
+              <div class="mt-auto flex justify-end pt-5">
+                <a
+                  href="https://zhafira155.github.io/XPPLG_2_enviroment/index.html"
+                  class="btn px-5 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:scale-105 transition"
+                >
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-wrap justify-center items-stretch max-w-4xl mx-auto gap-8 pb-10"
+        >
+          <!-- CARD 4 -->
+          <div
+            class="card bg-[#1e1b2e] rounded-2xl overflow-hidden flex flex-col w-full max-w-[320px] transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="100"
+            data-aos-easing="ease-out-cubic"
+            data-aos-once="true"
+          >
+            <div class="w-full h-48 overflow-hidden">
+              <img
+                src="gambar/floraint.png"
+                class="w-full h-full object-cover transition duration-700 hover:scale-110"
+              />
+            </div>
+
+            <div class="p-5 flex flex-col flex-grow">
+              <h3 class="font-bold text-white text-2xl">Florania</h3>
+              <p
+                class="text-purple-200 text-sm mt-2 text-justify leading-relaxed"
+              >
+                This website contains information about flower collections and
+                how to take care of them.
+              </p>
+              <div class="mt-auto flex justify-end pt-5">
+                <a
+                  href="https://zhafira155.github.io/tugas4/"
+                  class="btn px-5 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:scale-105 transition"
+                >
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- CARD 5 -->
+          <div
+            class="card bg-[#1e1b2e] rounded-2xl overflow-hidden flex flex-col w-full max-w-[320px] transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="200"
+            data-aos-easing="ease-out-cubic"
+            data-aos-once="true"
+          >
+            <div class="w-full h-48 overflow-hidden">
+              <img
+                src="gambar/neon-fast.png"
+                class="w-full h-full object-cover transition duration-700 hover:scale-110"
+              />
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+              <h3 class="text-white font-bold text-2xl">NEON FEST</h3>
+              <p
+                class="text-purple-200 text-sm mt-2 text-justify leading-relaxed"
+              >
+                This website provides information about music festivals as well
+                as online concert tickets sales with a modern and fast interface
+              </p>
+              <div class="mt-auto flex justify-end pt-5">
+                <a
+                  href="https://zhafira155.github.io/neon-fast_tugas5/"
+                  class="btn px-5 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:scale-105 transition"
+                >
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SERVICES -->
+      <div id="services" class="tab-content hidden py-10">
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6"
+        >
+          <!-- CARD 1 -->
+          <div
+            class="group text-center p-8 rounded-3xl bg-[#1e1b2e]/90 border border-white/10 backdrop-blur-lg transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(99,102,241,0.45)]"
+            data-aos="flip-left"
+            data-aos-duration="1400"
+            data-aos-delay="250"
+          >
+            <div
+              class="mx-auto w-20 h-20 flex items-center justify-center rounded-full bg-indigo-500 text-white mb-6 transition-all duration-500 group-hover:scale-125 group-hover:rotate-6 group-hover:shadow-[0_0_30px_rgba(99,102,241,0.7)]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-10 h-10 transition duration-500 group-hover:brightness-150"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path stroke-width="2" d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+              </svg>
+            </div>
+            <h2
+              class="text-white text-2xl font-bold transition duration-300 group-hover:text-indigo-300"
+            >
+              Front-End Development
+            </h2>
+            <p class="text-gray-300 text-sm mt-4 leading-relaxed">
+              Building responsive and interactive websites using HTML, CSS, and
+              JavaScript with modern design principles.
+            </p>
+          </div>
+          <!-- CARD 2 -->
+          <div
+            class="group text-center p-8 rounded-3xl bg-[#1e1b2e]/90 border border-white/10 backdrop-blur-lg transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(236,72,153,0.45)]"
+            data-aos="flip-left"
+            data-aos-duration="1400"
+            data-aos-delay="250"
+          >
+            <div
+              class="mx-auto w-20 h-20 flex items-center justify-center rounded-full bg-pink-500 text-white mb-6 transition-all duration-500 group-hover:scale-125 group-hover:-rotate-6 group-hover:shadow-[0_0_30px_rgba(236,72,153,0.7)]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-10 h-10 transition duration-500 group-hover:brightness-150"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg>
+            </div>
+            <h2
+              class="text-white text-2xl font-bold transition duration-300 group-hover:text-pink-300"
+            >
+              UI / UX Design
+            </h2>
+            <p class="text-gray-300 text-sm mt-4 leading-relaxed">
+              Designing clean and user-friendly interfaces with modern layouts,
+              smooth interactions, and attractive visuals.
+            </p>
+          </div>
+          <!-- CARD 3 -->
+          <div
+            class="group text-center p-8 rounded-3xl bg-[#1e1b2e]/90 border border-white/10 backdrop-blur-lg transition-all duration-500 hover:-translate-y-4 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(16,185,129,0.45)]"
+            data-aos="flip-left"
+            data-aos-duration="1400"
+            data-aos-delay="250"
+          >
+            <div
+              class="mx-auto w-20 h-20 flex items-center justify-center rounded-full bg-green-500 text-white mb-6 transition-all duration-500 group-hover:scale-125 group-hover:rotate-12 group-hover:shadow-[0_0_30px_rgba(16,185,129,0.7)]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-10 h-10 transition duration-500 group-hover:brightness-150"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-width="2"
+                  d="M9.75 3v2.25M14.25 3v2.25M4.5 8.25h15M6.75 21h10.5A2.25 2.25 0 0019.5 18.75V8.25A2.25 2.25 0 0017.25 6H6.75A2.25 2.25 0 004.5 8.25v10.5A2.25 2.25 0 006.75 21z"
+                />
+              </svg>
+            </div>
+            <h2
+              class="text-white text-2xl font-bold transition duration-300 group-hover:text-green-300"
+            >
+              Creative Web Design
+            </h2>
+            <p class="text-gray-300 text-sm mt-4 leading-relaxed">
+              Creating modern website layouts with smooth animations and
+              visually appealing user experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <!-- CONTACT -->
+    <section class="py-8 px-6" id="contact">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <p class="text-2 text-purple-400 tracking-widest text-2xl mb-5">
+          CONTACT
+        </p>
+
+        <h1 class="text-4xl font-bold text-purple-300 mt-2">Contact Us</h1>
+      </div>
+      <div class="max-w-[1100px] mx-auto grid md:grid-cols-2 gap-10">
+        <div
+          class="bg-[#1e1b2e] p-8 rounded-2xl border border-white/10 shadow-[0_0_40px_rgba(168,85,247,0.25)] hover:shadow-[0_0_60px_rgba(168,85,247,0.45)] transition duration-500"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <h2
+            class="text-white text-3xl font-bold mb-6 inline-block border-b-4 border-white pb-2"
+          >
+            Get In Touch
+          </h2>
+          <div class="space-y-6 text-purple-200 text-sm mt-6">
+            <div
+              class="flex items-start gap-3 border-b border-purple-500 pb-4 hover:translate-x-2 transition duration-300"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <a
+                href="https://maps.app.goo.gl/gKUhdi78GGFqrmco6?g_st=ac"
+                class="text-pink-500 text-3xl hover:scale-125 hover:text-pink-400 transition duration-300"
+              >
+                <i class="fas fa-map-marker-alt text-white text-2xl mb-1"></i>
+              </a>
+
+              <p class="mt-2">
+                Klero Village, Tengaran District, Semarang Regency
+              </p>
+            </div>
+
+            <div
+              class="flex items-center gap-3 border-b border-purple-500 pb-4 hover:translate-x-2 transition duration-300"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <a
+                href="mailto:zhafiranadyasyfa@gmail.com"
+                class="text-pink-500 text-3xl hover:scale-125 hover:text-pink-400 transition duration-300"
+              >
+                <i class="fas fa-envelope text-white text-2xl"></i>
+              </a>
+
+              <p class="mt-1">zhafiranadyasyfa@gmail.com</p>
+            </div>
+
+            <div
+              class="flex items-center gap-3 border-b border-purple-500 pb-4 hover:translate-x-2 transition duration-300"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <a
+                href="https://wa.me//6285866255626"
+                class="text-pink-500 text-3xl hover:scale-125 hover:text-pink-400 transition duration-300"
+              >
+                <i class="fas fa-phone-alt text-white text-2xl"></i>
+              </a>
+
+              <p>(+62) 858-6625-5626</p>
+            </div>
+
+            <div
+              class="flex items-center gap-4 text-white border-b border-purple-500 pb-4 hover:translate-x-2 transition duration-300"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <a
+                href="https://www.instagram.com/zhafira_53"
+                class="text-pink-500 text-2xl hover:scale-110 transition duration-300"
+              >
+                <i class="fab fa-instagram text-white text-white text-2xl"></i>
+              </a>
+              <p>@zhafira_53</p>
+            </div>
+          </div>
+        </div>
+        <!-- FORM -->
+        <div
+          class="space-y-4"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+        >
+          <div class="grid grid-cols-2 gap-6">
+            <input
+              type="text"
+              placeholder="Your Name"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+              class="p-3 rounded-xl bg-[#1e1b2e] text-white border border-white/10 focus:outline-none focus:ring-2 focus:ring-purple-500 shadow-[0_0_20px_rgba(168,85,247,0.15)] focus:shadow-[0_0_25px_rgba(168,85,247,0.4)] transition duration-300 hover:-translate-y-1 hover:scale-[1.02]"
+            />
+            <input
+              type="text"
+              placeholder="Your Phone"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+              class="p-3 rounded-xl bg-[#1e1b2e] text-white border border-white/10 focus:outline-none focus:ring-2 focus:ring-purple-500 shadow-[0_0_20px_rgba(168,85,247,0.15)] focus:shadow-[0_0_25px_rgba(168,85,247,0.4)] transition duration-300 hover:-translate-y-1 hover:scale-[1.02]"
+            />
+          </div>
+          <!-- EMAIL -->
+          <input
+            type="email"
+            placeholder="Your Email"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+            class="w-full mt-2 p-3 rounded-xl bg-[#1e1b2e] text-white border border-white/10 focus:outline-none focus:ring-2 focus:ring-purple-500 shadow-[0_0_20px_rgba(168,85,247,0.15)] focus:shadow-[0_0_25px_rgba(168,85,247,0.4)] transition duration-300 hover:-translate-y-1 hover:scale-[1.02]"
+          />
+          <br />
+          <!-- MESSAGE -->
+          <textarea
+            rows="6"
+            placeholder="Your Message"
+            data-aos="zoom-in"
+            data-aos-delay="600"
+            class="w-full mt-2 p-3 rounded-xl bg-[#1e1b2e] text-white border border-white/10 focus:outline-none focus:ring-2 focus:ring-purple-500 shadow-[0_0_20px_rgba(168,85,247,0.15)] focus:shadow-[0_0_25px_rgba(168,85,247,0.4)] transition duration-300 hover:-translate-y-1 hover:scale-[1.01]"
+          ></textarea>
+          <br />
+          <button
+            data-aos="flip-up"
+            data-aos-delay="700"
+            class="w-full py-3 rounded-xl text-white font-semibold bg-gradient-to-r from-purple-500 via-fuchsia-500 to-pink-500 shadow-lg shadow-purple-500/30 hover:scale-[1.03] hover:shadow-[0_0_35px_rgba(168,85,247,0.8)] active:scale-95 transition duration-300 animate-pulse"
+          >
+            Send Message
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-[#280C4F] w-full">
+      <div
+        class="max-w-6xl mx-auto px-10 py-5 grid grid-cols-1 md:grid-cols-[1.7fr_0.8fr_1fr] gap-14"
+      >
+        <div>
+          <h2 class="logo text-3xl text-white">Zhira</h2>
+
+          <p class="text-white text-sm mt-1">About Us</p>
+
+          <p
+            class="text-gray-300 text-sm leading-relaxed mt-1 text-justify max-w-[420px]"
+          >
+            Students who are learning web development with a focus on HTML, CSS,
+            and JavaScript as well as responsive website design.
+          </p>
+
+          <h3 class="text-white font-bold text-lg mt-3 tracking-wide">
+            Get In Touch
+          </h3>
+          <!-- INPUT -->
+          <form class="mt-3">
+            <div
+              class="relative flex items-center w-full max-w-[280px] bg-white/10 backdrop-blur-md rounded-full border border-white/30 overflow-hidden"
+            >
+              <input
+                type="email"
+                placeholder="Enter your email @"
+                class="w-full bg-transparent px-5 pr-28 py-2 text-sm text-white outline-none placeholder:text-white/70"
+              />
+
+              <a
+                href="index.html"
+                class="absolute right-1 bg-white text-black text-sm tracking-wider font-bold px-6 py-1 rounded-full hover:bg-[#d8d8d8] transition duration-300"
+              >
+                JOINT
+              </a>
+            </div>
+          </form>
+        </div>
+        <div class="md:ml-10">
+          <h2 class="text-white mb-2">Navigation</h2>
+
+          <ul class="text-gray-300 text-sm space-y-1">
+            <li><a href="index.html">• Home</a></li>
+            <li><a href="#about">• About</a></li>
+            <li><a href="#portfolio">• Portfolio</a></li>
+            <li><a href="#skills">• Skills</a></li>
+            <li><a href="#contact">• Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-white mb-2">Contact</h2>
+          <div class="space-y-1 text-sm text-gray-300">
+            <div class="flex items-center gap-2">
+              <a
+                href="mailto:zhafiranadyasyfa@gmail.com"
+                class="text-pink-500 text-2xl hover:scale-125 hover:text-pink-400 transition duration-300"
+              >
+                <i class="fas fa-envelope text-white"></i>
+              </a>
+              <p>Email: zhafiranadyasyfa@gmail.com</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <a
+                href="https://www.instagram.com/zhafira_53"
+                class="text-pink-500 text-2xl hover:scale-110 transition duration-300"
+              >
+                <i class="fab fa-instagram text-white"></i>
+              </a>
+              <p>Instagram: zhafira_53.id</p>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <a
+                href="https://wa.me//6285866255626"
+                class="text-pink-500 text-2xl hover:scale-125 hover:text-pink-400 transition duration-300"
+              >
+                <i class="fab fa-whatsapp text-white"></i>
+              </a>
+              <p>Whatsapp: 08xxxxxxxxxx</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-black/40 py-3 text-center">
+        <p class="text-white text-sm tracking-wide">
+          © 2026 Green Home Community. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- link js-->
+    <script src="script.js" defer></script>
+    <!-- link aos js-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- link cdn typed js-->
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script></script>
+  </body>
+</html>

@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RECOUNT TEXT</title>
+  </head>
+  <!-- link cdn tailwind-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- link aos-->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+  <body>
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio Story</title>
+
+        <!-- Tailwind -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- AOS -->
+        <link
+          href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+          rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+      </head>
+
+      <body>
+        <nav
+          id="navbar"
+          class="fixed top-3 left-1/2 -translate-x-1/2 w-[95%] max-w-5xl z-50 transition-all duration-500"
+        >
+          <div
+            id="nav-bg"
+            class="absolute inset-0 mx-auto md:w-[60%] w-full h-[95%] bg-white/10 backdrop-blur-md border border-white/10 rounded-full transition-all duration-500 ease-out"
+          ></div>
+          <div
+            class="relative flex items-center justify-between px-5 md:px-10 h-14"
+          >
+            <h1 class="logo py-1 tracking-wide text-white text-2xl">Zhira</h1>
+            <ul id="menu" class="relative hidden md:flex gap-3 px-3 py-1">
+              <!-- ACTIVE BACKGROUND -->
+              <div
+                id="active-bg"
+                class="absolute top-1 left-0 h-[75%] bg-gradient-to-r from-[#3F07CE] via-[#6D28D9] to-[#9D59BB] shadow-lg rounded-full transition-all duration-500 ease-out"
+              ></div>
+              <li
+                class="nav-item relative z-10 px-4 py-1 text-white cursor-pointer transition duration-300 hover:text-purple-200"
+              >
+                <a href="index.html">Home</a>
+              </li>
+
+              <li
+                class="nav-item relative z-10 px-4 py-1 text-white cursor-pointer transition duration-300 hover:text-purple-200"
+              >
+                <a href="index.html#about">About</a>
+              </li>
+
+              <li
+                class="nav-item relative z-10 px-4 py-1 text-white cursor-pointer transition duration-300 hover:text-purple-200"
+              >
+                <a href="index.html#skills">Skills</a>
+              </li>
+
+              <li
+                class="nav-item relative z-10 px-4 py-1 text-white cursor-pointer transition duration-300 hover:text-purple-200"
+              >
+                <a href="index.html#projects">Portfolio</a>
+              </li>
+            </ul>
+            <a
+              href="index.html#contact"
+              class="hidden md:block font-bold text-white px-6 py-2 rounded-full bg-gradient-to-r from-[#E15CFF] to-[#8713B9] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(200,1,255,0.6)]"
+            >
+              Contact
+            </a>
+            <details class="relative md:hidden">
+              <summary class="list-none text-white text-3xl cursor-pointer">
+                ☰
+              </summary>
+              <div
+                class="absolute right-0 mt-4 w-60 bg-[#1b1330]/95 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden shadow-2xl"
+              >
+                <ul class="flex flex-col text-center py-3">
+                  <li>
+                    <a
+                      href="index.html"
+                      class="block py-3 text-white hover:bg-white/10 transition"
+                    >
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="index.html#about"
+                      class="block py-3 text-white hover:bg-white/10 transition"
+                    >
+                      About
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="index.html#skills"
+                      class="block py-3 text-white hover:bg-white/10 transition"
+                    >
+                      Skills
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="index.html#projects"
+                      class="block py-3 text-white hover:bg-white/10 transition"
+                    >
+                      Portfolio
+                    </a>
+                  </li>
+                  <li class="px-4 mt-3">
+                    <a
+                      href="index.html#contact"
+                      class="block py-3 rounded-full text-white font-semibold bg-gradient-to-r from-[#E15CFF] to-[#8713B9]"
+                    >
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </nav>
+        <section
+          class="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-gradient-to-br from-[#1e0b3b] via-[#0f0f1a] to-[#1e0b3b]"
+        >
+          <p
+            class="tracking-[8px] text-purple-300 text-sm mb-4"
+            data-aos="fade-up"
+          >
+            MY JOURNEY STORY
+          </p>
+          <h1
+            class="text-5xl md:text-7xl font-bold gradient-text mb-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            Portfolio Experience
+          </h1>
+          <p
+            class="text-gray-300 max-w-xl"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            This page tells the story of how we built a simple personal
+            portfolio website, including the challenges, learning process, and
+            tools we used along the way.
+          </p>
+          <a
+            href="#recount"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            class="mt-8 px-6 py-3 text-white bg-purple-600 rounded-full hover:bg-purple-500 transition shadow-lg"
+          >
+            Read Story
+          </a>
+        </section>
+        <section class="py-20 px-6 max-w-4xl mx-auto text-center" id="recount">
+          <p
+            class="text-purple-400 tracking-[6px] text-sm mb-4"
+            data-aos="fade-up"
+          >
+            INTRODUCTION
+          </p>
+          <h2
+            class="text-3xl text-white font-bold mb-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            A Simple Portfolio Project
+          </h2>
+          <p
+            class="text-gray-300 leading-relaxed text-justify"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            In this project, we explored how to create a simple yet meaningful
+            portfolio website. This experience helped us understand not only the
+            technical aspects of web development but also the importance of
+            creativity and problem-solving.
+          </p>
+        </section>
+        <section class="text-center mb-10" data-aos="fade-up">
+          <p class="text-gray-400 italic">Written by Zhafira Nadya Syfa</p>
+        </section>
+        <section class="text-center mb-10" data-aos="fade-up">
+          <h2 class="text-4xl font-bold gradient-text">Recount Text</h2>
+        </section>
+        <section class="pb-24 px-6 max-w-5xl mx-auto">
+          <div
+            class="glass p-8 md:p-10 rounded-3xl border border-white/10 transition-all duration-500 hover:shadow-[0_0_35px_rgba(168,85,247,0.25)]"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div data-aos="fade-up" data-aos-delay="100">
+              <h3 class="text-purple-300 font-bold mb-3 text-xl">
+                Orientation
+              </h3>
+              <p class="text-gray-300 leading-relaxed text-justify">
+                As students of Software Engineering, we learned many things
+                about technology, especially web development. In this project,
+                we created a simple personal portfolio website using HTML, CSS,
+                and JavaScript. We also used frameworks such as Tailwind CSS and
+                Bootstrap to make the design more efficient and responsive. In
+                addition, we used tools like Visual Studio Code to write and
+                organize our code, and AOS (Animate On Scroll) to add
+                animations. These tools helped us work more effectively and made
+                the website look more modern and interactive.
+              </p>
+            </div>
+            <div
+              class="w-full h-[1px] bg-white/10 my-10"
+              data-aos="zoom-in"
+              data-aos-delay="150"
+            ></div>
+
+            <!-- Events -->
+            <div data-aos="fade-up" data-aos-delay="200">
+              <h3 class="text-purple-300 font-bold mb-3 text-xl">Events</h3>
+              <p class="text-gray-300 leading-relaxed text-justify">
+                First, we started by planning the structure of the website. We
+                discussed what sections should be included, such as the home
+                page, about section, skills, and portfolio. After that, we
+                created the basic layout using HTML. Next, we focused on styling
+                the website. We used Tailwind CSS to quickly design the layout
+                and applied Bootstrap for some components. At this stage, we
+                learned how to combine different frameworks and adjust them to
+                match our design.
+                <br /><br />
+                During the development process, we faced several challenges.
+                Sometimes the layout did not look as expected, and some elements
+                were not responsive. We also experienced difficulties with
+                JavaScript, especially when handling interactions and
+                animations. However, we did not give up. We tried to fix the
+                problems by searching for solutions on the internet, reading
+                documentation, and asking for help when needed.
+                <br /><br />
+                Slowly, we began to understand our mistakes and improved our
+                coding skills. After that, we added animations using AOS to make
+                the website more engaging. At first, the animations did not work
+                properly, but after several attempts, we successfully
+                implemented them. This made the website feel more alive and
+                professional.
+                <br /><br />
+                Finally, we tested the website on different screen sizes to make
+                sure it worked well on both desktop and mobile devices. We made
+                several adjustments until we were satisfied with the result.
+              </p>
+            </div>
+            <!-- Divider -->
+            <div
+              class="w-full h-[1px] bg-white/10 my-10"
+              data-aos="zoom-in"
+              data-aos-delay="250"
+            ></div>
+            <!-- Re-orientation -->
+            <div data-aos="fade-up" data-aos-delay="300">
+              <h3 class="text-purple-300 font-bold mb-3 text-xl">
+                Re-orientation
+              </h3>
+              <p class="text-gray-300 leading-relaxed text-justify">
+                Through this experience, we learned that building a website
+                required patience, creativity, and consistency. We also realized
+                that using frameworks could speed up the development process,
+                but understanding the basic concepts was still very important.
+                <br /><br />
+                We felt proud of what we achieved because we were able to
+                complete the project despite the challenges. This project also
+                increased our confidence in web development and motivated us to
+                continue learning and improving our skills in the future.
+              </p>
+            </div>
+          </div>
+        </section>
+        <footer class="bg-[#280C4F] w-full">
+          <div
+            class="max-w-6xl mx-auto px-10 py-5 grid grid-cols-1 md:grid-cols-[1.7fr_0.8fr_1fr] gap-14"
+          >
+            <div>
+              <h2 class="logo text-3xl text-white">Zhira</h2>
+              <p class="text-white text-sm mt-1">About Us</p>
+              <p
+                class="text-gray-300 text-sm leading-relaxed mt-1 text-justify max-w-[420px]"
+              >
+                Students who are learning web development with a focus on HTML,
+                CSS, and JavaScript as well as responsive website design.
+              </p>
+              <h3 class="text-white font-bold text-lg mt-3 tracking-wide">
+                Get In Touch
+              </h3>
+              <form class="mt-3">
+                <div
+                  class="relative flex items-center w-full max-w-[280px] bg-white/10 backdrop-blur-md rounded-full border border-white/30 overflow-hidden"
+                >
+                  <input
+                    type="email"
+                    placeholder="Enter your email @"
+                    class="w-full bg-transparent px-5 pr-28 py-2 text-sm text-white outline-none placeholder:text-white/70"
+                  />
+                  <a
+                    href="index.html"
+                    class="absolute right-1 bg-white text-black text-sm tracking-wider font-bold px-6 py-1 rounded-full hover:bg-[#d8d8d8] transition duration-300"
+                  >
+                    JOINT
+                  </a>
+                </div>
+              </form>
+            </div>
+            <div class="md:ml-10">
+              <h2 class="text-white mb-2">Navigation</h2>
+              <ul class="text-gray-300 text-sm space-y-1">
+                <li><a href="index.html">• Home</a></li>
+                <li><a href="idex.html#about">• About</a></li>
+                <li><a href="index.html#portfolio">• Portfolio</a></li>
+                <li><a href="index.html#skills">• Skills</a></li>
+                <li><a href="index.html#contact">• Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="text-white mb-2">Contact</h2>
+              <div class="space-y-1 text-sm text-gray-300">
+                <div class="flex items-center gap-2">
+                  <a
+                    href="mailto:zhafiranadyasyfa@gmail.com"
+                    class="text-pink-500 text-2xl hover:scale-125 hover:text-pink-400 transition duration-300"
+                  >
+                    <i class="fas fa-envelope text-white"></i>
+                  </a>
+                  <p>Email: zhafiranadyasyfa@gmail.com</p>
+                </div>
+                <div class="flex items-center gap-2">
+                  <a
+                    href="https://www.instagram.com/zhafira_53"
+                    class="text-pink-500 text-2xl hover:scale-110 transition duration-300"
+                  >
+                    <i class="fab fa-instagram text-white"></i>
+                  </a>
+                  <p>Instagram: zhafira_53.id</p>
+                </div>
+                <div class="flex items-center gap-2">
+                  <a
+                    href="https://wa.me//6285866255626"
+                    class="text-pink-500 text-2xl hover:scale-125 hover:text-pink-400 transition duration-300"
+                  >
+                    <i class="fab fa-whatsapp text-white"></i>
+                  </a>
+                  <p>Whatsapp: 08xxxxxxxxxx</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- BOTTOM -->
+          <div class="border-t border-black/40 py-3 text-center">
+            <p class="text-white text-sm tracking-wide">
+              © 2026 Green Home Community. All rights reserved.
+            </p>
+          </div>
+        </footer>
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+      </body>
+    </html>
+    <script src="script.js"></script>
+    <!-- link aos js-->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  </body>
+</html>
