@@ -36,9 +36,7 @@
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
   </head>
-
-  <body class="bg-[#150C21] h-[2000px]">
-    <!-- NAVBAR -->
+  <body class="bg-[#150C21]">
     <!-- NAVBAR -->
     <nav
       id="navbar"
@@ -145,10 +143,10 @@
       class="relative h-screen flex items-center bg-gradient-to-br from-[#100322] via-[#1A0733] to-[#420D88] text-white"
     >
       <div
-        class="max-w-7xl mx-auto px-6 md:px-16 flex w-full items-center mt-10"
+        class="max-w-7xl mx-auto px-6 md:px-16 flex flex-col-reverse md:flex-row w-full items-center mt-10 gap-10"
       >
         <div
-          class="w-1/2 relative z-20"
+          class="w-full md:w-1/2 relative z-20"
           data-aos="fade-right"
           data-aos-offset="80"
           data-aos-duration="1200"
@@ -157,7 +155,7 @@
             <span id="gerakan"></span>
           </p>
 
-          <h1 class="text-2 text-6xl leading-tight mb-4">
+          <h1 class="text-2 md:text-6xl leading-tight mb-4">
             Junior Front End <br />
             <span id="element" class="text-purple-400"></span>
           </h1>
@@ -168,7 +166,7 @@
           <div class="flex gap-4">
             <a
               href="#about"
-              class="border border-white px-5 py-2 rounded-lg hover:bg-purple-600 transition"
+              class="btn border border-white px-6 py-2 rounded-lg bg-gradient-to-r from-[#E15CFF] to-[#8713B9]"
             >
               See my portfolio
             </a>
@@ -214,7 +212,7 @@
           </div>
         </div>
         <!-- Spline -->
-        <div class="w-1/2 flex items-center justify-center mt-10">
+        <div class="w-full md:w-1/2 flex items-center justify-center mt-10">
           <div class="relative w-full max-w-[600px] aspect-square">
             <div class="radial-glow"></div>
             <spline-viewer
@@ -266,7 +264,7 @@
         </p>
         <div class="flex flex-col md:flex-row items-center w-full">
           <div
-            class="w-full md:w-1/2 flex mb-12 ml-10 md:mb-0 justify-self-start"
+            class="w-full md:w-1/2 flex justify-center md:justify-start mb-12 md:mb-0"
             data-aos="fade-right"
           >
             <div class="relative -translate-x-8">
@@ -281,7 +279,7 @@
             </div>
           </div>
           <div
-            class="w-full md:w-3/4 flex justify-start mr-8 md:pl-10 mb-5"
+            class="w-full md:w-3/4 flex justify-start md:pl-10 mb-5"
             data-aos="fade-left"
           >
             <div
@@ -330,9 +328,11 @@
       class="bg-gradient-to-r from-[#1e0b3b] to-[#3b0f5c] py-20"
       id="skills"
     >
-      <div class="max-w-6xl mx-auto grid grid-cols-2 gap-10 px-10">
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-6 md:px-10"
+      >
         <div data-aos="fade-right" class="justify-self-start -ml-4">
-          <h1 class="text-6xl font-bold mb-4">
+          <h1 class="text-4xl md:text-6xl font-bold mb-4">
             <span class="text-purple-400">My </span>
             <span class="gradient-text"> Skills </span>
           </h1>
@@ -345,7 +345,7 @@
             attractive website appearances.
           </p>
           <br />
-          <div class="flex gap-10 mt-8 text-center">
+          <div class="flex flex-wrap gap-6 mt-8 text-center">
             <div>
               <h2 class="text-3xl font-bold text-white">1+</h2>
               <p class="text-purple-300 text-xl">Years Learning</p>
@@ -543,7 +543,7 @@
         >
           <!-- CARD 1 -->
           <div
-            class="card bg-[#1e1b2e] rounded-2xl overflow-hidden flex flex-col w-full max-w-[320px] mx-auto transition duration-500 transform hover:-translate-y-3 hover:scale-105 hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
+            class="card bg-[#1e1b2e] rounded-2xl overflow-hidden flex flex-col w-full max-w-sm mx-auto transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
             data-aos="fade-up"
             data-aos-duration="1400"
             data-aos-delay="100"
@@ -570,7 +570,7 @@
               <div class="mt-auto flex justify-end pt-5">
                 <a
                   href="https://zhafira155.github.io/waste-to-worth/"
-                  class="btn px-5 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:scale-105 transition"
+                  class="btn px-5 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:scale-105 transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
                 >
                   Learn More
                 </a>
@@ -579,7 +579,7 @@
           </div>
           <!-- CARD 2 -->
           <div
-            class="card bg-[#1e1b2e] rounded-2xl overflow-hidden flex flex-col w-full max-w-[320px] mx-auto transition duration-500 transform hover:-translate-y-3 hover:scale-105 hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
+            class="card bg-[#1e1b2e] rounded-2xl overflow-hidden flex flex-col w-full max-w-sm mx-auto transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
             data-aos="fade-up"
             data-aos-duration="1400"
             data-aos-delay="300"
@@ -604,7 +604,7 @@
               <div class="mt-auto flex justify-end pt-5">
                 <a
                   href="https://zhafira155.github.io/XPPLG_2_SMK_Digital/"
-                  class="btn px-5 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:scale-105 transition"
+                  class="btn px-5 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:scale-105 transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
                 >
                   Learn More
                 </a>
@@ -613,7 +613,7 @@
           </div>
           <!-- CARD 3 -->
           <div
-            class="card bg-[#1e1b2e] rounded-2xl overflow-hidden flex flex-col w-full max-w-[320px] mx-auto transition duration-500 transform hover:-translate-y-3 hover:scale-105 hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
+            class="card bg-[#1e1b2e] rounded-2xl overflow-hidden flex flex-col w-full max-w-sm mx-auto transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
             data-aos="fade-up"
             data-aos-duration="1400"
             data-aos-delay="500"
@@ -638,7 +638,7 @@
               <div class="mt-auto flex justify-end pt-5">
                 <a
                   href="https://zhafira155.github.io/XPPLG_2_enviroment/index.html"
-                  class="btn px-5 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:scale-105 transition"
+                  class="btn px-5 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:scale-105 transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
                 >
                   Learn More
                 </a>
@@ -647,11 +647,11 @@
           </div>
         </div>
         <div
-          class="flex flex-wrap justify-center items-stretch max-w-4xl mx-auto gap-8 pb-10"
+          class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto px-4 pb-10"
         >
           <!-- CARD 4 -->
           <div
-            class="card bg-[#1e1b2e] rounded-2xl overflow-hidden flex flex-col w-full max-w-[320px] transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
+            class="card bg-[#1e1b2e] rounded-2xl overflow-hidden flex flex-col w-full max-w-sm transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
             data-aos="fade-up"
             data-aos-duration="1200"
             data-aos-delay="100"
@@ -676,7 +676,7 @@
               <div class="mt-auto flex justify-end pt-5">
                 <a
                   href="https://zhafira155.github.io/tugas4/"
-                  class="btn px-5 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:scale-105 transition"
+                  class="btn px-5 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:scale-105 transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
                 >
                   Learn More
                 </a>
@@ -685,7 +685,7 @@
           </div>
           <!-- CARD 5 -->
           <div
-            class="card bg-[#1e1b2e] rounded-2xl overflow-hidden flex flex-col w-full max-w-[320px] transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
+            class="card bg-[#1e1b2e] rounded-2xl overflow-hidden flex flex-col w-full max-w-sm transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
             data-aos="fade-up"
             data-aos-duration="1200"
             data-aos-delay="200"
@@ -709,7 +709,7 @@
               <div class="mt-auto flex justify-end pt-5">
                 <a
                   href="https://zhafira155.github.io/neon-fast_tugas5/"
-                  class="btn px-5 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:scale-105 transition"
+                  class="btn px-5 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:scale-105 transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
                 >
                   Learn More
                 </a>
@@ -910,7 +910,7 @@
           data-aos-delay="200"
           data-aos-duration="1000"
         >
-          <div class="grid grid-cols-2 gap-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <input
               type="text"
               placeholder="Your Name"
@@ -956,7 +956,7 @@
     </section>
     <footer class="bg-[#280C4F] w-full">
       <div
-        class="max-w-6xl mx-auto px-10 py-5 grid grid-cols-1 md:grid-cols-[1.7fr_0.8fr_1fr] gap-14"
+        class="max-w-6xl mx-auto px-6 md:px-10 py-8 grid grid-cols-1 md:grid-cols-[1.7fr_0.8fr_1fr] gap-10"
       >
         <div>
           <h2 class="logo text-3xl text-white">Zhira</h2>
