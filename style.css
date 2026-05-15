@@ -1,6 +1,5 @@
 /* test perubahan */
 body {
-  min-height: 100vh;
   background:
     radial-gradient(circle at top left,
       rgba(59, 130, 246, 0.18),
@@ -52,6 +51,12 @@ spline-viewer {
   display: block;
   position: relative;
   overflow: hidden;
+} 
+
+@media (max-width:768px) {
+  .spline-object {
+    transform: scale(0.85);
+  }
 }
 
 .background {
