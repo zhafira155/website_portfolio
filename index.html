@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Website Portfolio</title>
+    <title>Website Portfolio Zhira</title>
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Css -->
@@ -36,11 +36,11 @@
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
   </head>
-  <body class="bg-[#150C21]">
+  <body class="bg-[#150C21] overflow-x-hidden">
     <!-- NAVBAR -->
     <nav
       id="navbar"
-      class="fixed top-3 left-1/2 -translate-x-1/2 w-[95%] max-w-5xl z-50 transition-all duration-500"
+      class="fixed top-3 left-1/2 -translate-x-1/2 w-[92%] md:w-[95%] max-w-5xl z-50 transition-all duration-500"
     >
       <div
         id="nav-bg"
@@ -81,16 +81,18 @@
         </ul>
         <a
           href="#contact"
-          class="hidden md:block font-bold text-white px-6 py-2 rounded-full bg-gradient-to-r from-[#E15CFF] to-[#8713B9] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(200,1,255,0.6)]"
+          class="hidden md:block font-bold text-white px-6 py-2 rounded-full bg-gradient-to-r from-[#E15CFF] to-[#8713B9] transition-all duration-300 md:hover:scale-105 hover:shadow-[0_0_20px_rgba(200,1,255,0.6)]"
         >
           Contact
         </a>
         <details class="relative md:hidden">
-          <summary class="list-none text-white text-3xl cursor-pointer">
+          <summary
+            class="list-none text-white text-2xl md:text-2xl md:text-2xl md:text-3xl cursor-pointer"
+          >
             ☰
           </summary>
           <div
-            class="absolute right-0 mt-4 w-60 bg-[#1b1330]/95 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden shadow-2xl"
+            class="absolute right-0 mt-4 w-52 bg-[#1b1330]/95 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden shadow-2xl"
           >
             <ul class="flex flex-col text-center py-3">
               <li>
@@ -140,10 +142,10 @@
     </nav>
     <!-- HERO SECTION -->
     <section
-      class="relative h-screen flex items-center bg-gradient-to-br from-[#100322] via-[#1A0733] to-[#420D88] text-white"
+      class="relative min-h-screen md:h-screen flex items-center py-16 bg-gradient-to-br from-[#100322] via-[#1A0733] to-[#420D88] text-white"
     >
       <div
-        class="max-w-7xl mx-auto px-6 md:px-16 flex flex-col-reverse md:flex-row w-full items-center mt-10 gap-10"
+        class="max-w-7xl mx-auto px-5 md:px-16 flex flex-col-reverse md:flex-row w-full items-center mt-20 md:mt-10 gap-6 md:gap-10"
       >
         <div
           class="w-full md:w-1/2 relative z-20"
@@ -151,28 +153,30 @@
           data-aos-offset="80"
           data-aos-duration="1200"
         >
-          <p class="text-2 text-purple-600 mb-2 text-2xl">
+          <p class="text-2 text-purple-400 mb-2 text-xl md:text-2xl">
             <span id="gerakan"></span>
           </p>
 
-          <h1 class="text-2 md:text-6xl leading-tight mb-4">
+          <h1 class="text-2 text-5xl md:text-6xl leading-tight mb-4">
             Junior Front End <br />
             <span id="element" class="text-purple-400"></span>
           </h1>
-          <p class="text-gray-300 mb-6 max-w-md text-justify">
+          <p
+            class="text-gray-300 mb-6 max-w-sm md:max-w-md text-justify text-sm md:text-base"
+          >
             Mastering HTML, CSS, JavaScript, as well as Bootstrap and Tailwind
             CSS to build modern and responsive websites.
           </p>
-          <div class="flex gap-4">
+          <div class="flex flex-wrap gap-3">
             <a
               href="#about"
-              class="btn border border-white px-6 py-2 rounded-lg bg-gradient-to-r from-[#E15CFF] to-[#8713B9]"
+              class="btn border border-purple-400 bg-purple-400 text-white px-4 md:px-6 py-2 text-sm md:text-base rounded-lg transition-all duration-300 hover:bg-purple-500 hover:scale-105 hover:shadow-[0_0_20px_rgba(192,132,252,0.7)]"
             >
               See my portfolio
             </a>
             <a
               href="#contact"
-              class="border border-white px-5 py-2 rounded-lg hover:bg-purple-600 transition"
+              class="btn border border-white text-white px-4 md:px-6 py-2 text-sm md:text-base rounded-lg transition-all duration-300 hover:bg-purple-400 hover:border-purple-400 hover:text-white hover:scale-105 hover:shadow-[0_0_20px_rgba(192,132,252,0.7)]"
             >
               Contact me
             </a>
@@ -212,12 +216,16 @@
           </div>
         </div>
         <!-- Spline -->
-        <div class="w-full md:w-1/2 flex items-center justify-center mt-10">
-          <div class="relative w-full max-w-[600px] aspect-square">
+        <div
+          class="w-full md:w-1/2 flex items-center justify-center mt-4 md:mt-10"
+        >
+          <div
+            class="relative w-full max-w-[260px] sm:max-w-[320px] md:max-w-[600px] aspect-square mx-auto"
+          >
             <div class="radial-glow"></div>
             <spline-viewer
               url="https://prod.spline.design/0HxnbaWwiSWfr3n9/scene.splinecode"
-              class="spline-object"
+              class="spline-object w-full h-full"
             ></spline-viewer>
           </div>
         </div>
@@ -235,22 +243,10 @@
       <div
         class="absolute bottom-[-150px] right-[-100px] w-[320px] h-[320px] bg-pink-500/20 rounded-full blur-3xl"
       ></div>
-      <div
-        class="absolute inset-0 opacity-[0.03]"
-        style="
-          background-image:
-            linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
-            linear-gradient(
-              90deg,
-              rgba(255, 255, 255, 0.08) 1px,
-              transparent 1px
-            );
-          background-size: 45px 45px;
-        "
-      ></div>
+      <div class="absolute inset-0 opacity-[0.03]"></div>
       <div class="max-w-7xl mx-auto px-6 md:px-10 w-full relative z-10">
         <h1
-          class="text-4xl md:text-5xl font-extrabold text-purple-300 text-center mt-12"
+          class="text-2xl md:text-2xl md:text-2xl md:text-3xl md:text-5xl md:text-5xl font-extrabold text-purple-300 text-center mt-12"
           data-aos="fade-down"
         >
           About Me
@@ -279,7 +275,7 @@
             </div>
           </div>
           <div
-            class="w-full md:w-3/4 flex justify-start md:pl-10 mb-5"
+            class="w-full md:w-3/4 flex justify-start md:pl-10 px-2 md:px-0 mb-5"
             data-aos="fade-left"
           >
             <div
@@ -294,12 +290,12 @@
               ></div>
               <div class="relative z-10">
                 <h2
-                  class="text-2 text-2xl md:text-3xl mb-5 text-purple-400 font-semibold tracking-widest"
+                  class="text-2 text-2xl md:text-2xl md:text-2xl md:text-2xl md:text-3xl mb-5 text-purple-400 font-semibold tracking-widest"
                 >
                   HI! I'M ZHAFIRA
                 </h2>
                 <p
-                  class="text-sm tracking-wider text-purple-200 leading-relaxed text-justify"
+                  class="text-sm md:text-base tracking-wider text-purple-200 leading-relaxed text-justify"
                 >
                   I am a 15-year-old 10th-grade student majoring in Software
                   Engineering (RPL 2) at SMKN 1 Tengaran, with a strong interest
@@ -313,7 +309,7 @@
                 <br />
                 <a
                   href="recount-text.html"
-                  class="btn font-bold text-white px-6 py-2 rounded-lg bg-gradient-to-r from-[#E15CFF] to-[#8713B9] transition-all duration-300 ease-out hover:scale-105 hover:shadow-[0_0_20px_rgba(200,1,255,0.6)]"
+                  class="btn font-bold text-white px-6 py-2 rounded-lg bg-gradient-to-r from-[#E15CFF] to-[#8713B9] transition-all duration-300 ease-out md:hover:scale-105 hover:shadow-[0_0_20px_rgba(200,1,255,0.6)]"
                 >
                   Recount text
                 </a>
@@ -331,14 +327,18 @@
       <div
         class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-6 md:px-10"
       >
-        <div data-aos="fade-right" class="justify-self-start -ml-4">
-          <h1 class="text-4xl md:text-6xl font-bold mb-4">
+        <div data-aos="fade-right" class="justify-self-start md:-ml-4">
+          <h1
+            class="text-2xl md:text-2xl md:text-2xl md:text-3xl md:text-5xl md:text-6xl font-bold mb-4"
+          >
             <span class="text-purple-400">My </span>
             <span class="gradient-text"> Skills </span>
           </h1>
           <div class="w-20 h-1 bg-purple-400 mt-2 mb-6 rounded"></div>
           <br />
-          <p class="text-xl text-gray-300 tracking-wider text-justify">
+          <p
+            class="text-base md:text-xl text-gray-300 tracking-wider text-justify"
+          >
             As a beginner in the field of Front-End Development, I continue to
             learn HTML, CSS, JavaScript, as well as frameworks like Tailwind and
             Bootstrap, and I am also starting to study UI design to create
@@ -347,15 +347,27 @@
           <br />
           <div class="flex flex-wrap gap-6 mt-8 text-center">
             <div>
-              <h2 class="text-3xl font-bold text-white">1+</h2>
+              <h2
+                class="text-2xl md:text-2xl md:text-2xl md:text-3xl font-bold text-white"
+              >
+                1+
+              </h2>
               <p class="text-purple-300 text-xl">Years Learning</p>
             </div>
             <div>
-              <h2 class="text-3xl font-bold text-white">5+</h2>
+              <h2
+                class="text-2xl md:text-2xl md:text-2xl md:text-3xl font-bold text-white"
+              >
+                5+
+              </h2>
               <p class="text-purple-300 text-xl">Projects</p>
             </div>
             <div>
-              <h2 class="text-3xl font-bold text-white">3+</h2>
+              <h2
+                class="text-2xl md:text-2xl md:text-2xl md:text-3xl font-bold text-white"
+              >
+                3+
+              </h2>
               <p class="text-purple-300 text-xl">Skills</p>
             </div>
           </div>
@@ -369,7 +381,9 @@
             data-aos-delay="100"
           >
             <div class="flex items-center gap-4">
-              <i class="devicon-html5-plain colored skill-icon text-4xl"></i>
+              <i
+                class="devicon-html5-plain colored skill-icon text-2xl md:text-2xl md:text-2xl md:text-3xl md:text-5xl"
+              ></i>
 
               <div class="w-full">
                 <div class="flex items-center justify-between mb-2 text-sm">
@@ -389,7 +403,9 @@
             data-aos-delay="200"
           >
             <div class="flex items-center gap-4">
-              <i class="devicon-css3-plain colored skill-icon text-4xl"></i>
+              <i
+                class="devicon-css3-plain colored skill-icon text-2xl md:text-2xl md:text-2xl md:text-3xl md:text-5xl"
+              ></i>
               <div class="w-full">
                 <div class="flex items-center justify-between mb-2 text-sm">
                   <span class="text-white font-medium skill-title">CSS</span>
@@ -410,7 +426,7 @@
           >
             <div class="flex items-center gap-4">
               <i
-                class="devicon-bootstrap-plain colored skill-icon text-4xl"
+                class="devicon-bootstrap-plain colored skill-icon text-2xl md:text-2xl md:text-2xl md:text-3xl md:text-5xl"
               ></i>
               <div class="w-full">
                 <div class="flex items-center justify-between mb-2 text-sm">
@@ -433,7 +449,7 @@
           >
             <div class="flex items-center gap-4">
               <i
-                class="devicon-tailwindcss-plain colored skill-icon text-4xl"
+                class="devicon-tailwindcss-plain colored skill-icon text-2xl md:text-2xl md:text-2xl md:text-3xl md:text-5xl"
               ></i>
               <div class="w-full">
                 <div class="flex items-center justify-between mb-2 text-sm">
@@ -456,7 +472,7 @@
           >
             <div class="flex items-center gap-4">
               <i
-                class="devicon-javascript-plain colored skill-icon text-4xl"
+                class="devicon-javascript-plain colored skill-icon text-2xl md:text-2xl md:text-2xl md:text-3xl md:text-5xl"
               ></i>
               <div class="w-full">
                 <div class="flex items-center justify-between mb-2 text-sm">
@@ -479,7 +495,9 @@
             data-aos-delay="600"
           >
             <div class="flex items-center gap-4">
-              <i class="devicon-figma-plain colored skill-icon text-4xl"></i>
+              <i
+                class="devicon-figma-plain colored skill-icon text-2xl md:text-2xl md:text-2xl md:text-3xl md:text-5xl"
+              ></i>
               <div class="w-full">
                 <div class="flex items-center justify-between mb-2 text-sm">
                   <span class="text-white font-medium skill-title">Figma</span>
@@ -505,7 +523,7 @@
             My Portfolio
           </h5>
           <h2
-            class="text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent"
+            class="text-2xl md:text-2xl md:text-3xl md:text-5xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent"
           >
             PORTFOLIO
           </h2>
@@ -520,7 +538,7 @@
             ></div>
             <button
               onclick="showTab('projects', event)"
-              class="tab-btn relative px-7 py-3 rounded-xl font-semibold text-sm tracking-wide text-white bg-gradient-to-r from-purple-600 to-indigo-600 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:scale-105 hover:shadow-purple-500/50 overflow-hidden"
+              class="tab-btn relative px-7 py-3 rounded-xl font-semibold text-sm tracking-wide text-white bg-gradient-to-r from-purple-600 to-indigo-600 shadow-lg shadow-purple-500/30 transition-all duration-300 md:md:hover:scale-105 hover:shadow-purple-500/50 overflow-hidden"
             >
               <span class="relative z-10">Projects</span>
               <span
@@ -529,7 +547,7 @@
             </button>
             <button
               onclick="showTab('services', event)"
-              class="tab-btn relative px-7 py-3 rounded-xl font-semibold text-sm tracking-wide text-gray-300 bg-[#201c35]/70 border border-white/5 transition-all duration-300 hover:text-white hover:bg-[#2b2447] hover:scale-105 hover:shadow-lg hover:shadow-purple-500/20"
+              class="tab-btn relative px-7 py-3 rounded-xl font-semibold text-sm tracking-wide text-gray-300 bg-[#201c35]/70 border border-white/5 transition-all duration-300 hover:text-white hover:bg-[#2b2447] md:md:hover:scale-105 hover:shadow-lg hover:shadow-purple-500/20"
             >
               Services
             </button>
@@ -543,14 +561,14 @@
         >
           <!-- CARD 1 -->
           <div
-            class="card bg-[#1e1b2e] rounded-2xl overflow-hidden flex flex-col w-full max-w-sm mx-auto transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
+            class="card bg-[#1e1b2e] rounded-2xl overflow-hidden flex flex-col w-full max-w-[300px] md:max-w-sm mx-auto transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
             data-aos="fade-up"
             data-aos-duration="1400"
             data-aos-delay="100"
             data-aos-easing="ease-out-cubic"
             data-aos-once="true"
           >
-            <div class="w-full h-48 overflow-hidden">
+            <div class="w-full h-40 md:h-48 overflow-hidden">
               <img
                 src="gambar/wastetoworth.png"
                 class="w-full h-full object-cover transition duration-700 hover:scale-110"
@@ -570,7 +588,7 @@
               <div class="mt-auto flex justify-end pt-5">
                 <a
                   href="https://zhafira155.github.io/waste-to-worth/"
-                  class="btn px-5 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:scale-105 transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
+                  class="btn px-5 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold md:md:hover:scale-105 transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
                 >
                   Learn More
                 </a>
@@ -579,14 +597,14 @@
           </div>
           <!-- CARD 2 -->
           <div
-            class="card bg-[#1e1b2e] rounded-2xl overflow-hidden flex flex-col w-full max-w-sm mx-auto transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
+            class="card bg-[#1e1b2e] rounded-2xl overflow-hidden flex flex-col w-full max-w-[300px] md:max-w-sm mx-auto transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
             data-aos="fade-up"
             data-aos-duration="1400"
             data-aos-delay="300"
             data-aos-easing="ease-out-cubic"
             data-aos-once="true"
           >
-            <div class="w-full h-48 overflow-hidden">
+            <div class="w-full h-40 md:h-48 overflow-hidden">
               <img
                 src="gambar/smk-digital.png"
                 class="w-full h-full object-cover transition duration-700 hover:scale-110"
@@ -604,7 +622,7 @@
               <div class="mt-auto flex justify-end pt-5">
                 <a
                   href="https://zhafira155.github.io/XPPLG_2_SMK_Digital/"
-                  class="btn px-5 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:scale-105 transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
+                  class="btn px-5 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold md:md:hover:scale-105 transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
                 >
                   Learn More
                 </a>
@@ -613,14 +631,14 @@
           </div>
           <!-- CARD 3 -->
           <div
-            class="card bg-[#1e1b2e] rounded-2xl overflow-hidden flex flex-col w-full max-w-sm mx-auto transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
+            class="card bg-[#1e1b2e] rounded-2xl overflow-hidden flex flex-col w-full max-w-[300px] md:max-w-sm mx-auto transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
             data-aos="fade-up"
             data-aos-duration="1400"
             data-aos-delay="500"
             data-aos-easing="ease-out-cubic"
             data-aos-once="true"
           >
-            <div class="w-full h-48 overflow-hidden">
+            <div class="w-full h-40 md:h-48 overflow-hidden">
               <img
                 src="gambar/environment.jpg"
                 class="w-full h-full object-cover transition duration-700 hover:scale-110"
@@ -638,7 +656,7 @@
               <div class="mt-auto flex justify-end pt-5">
                 <a
                   href="https://zhafira155.github.io/XPPLG_2_enviroment/index.html"
-                  class="btn px-5 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:scale-105 transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
+                  class="btn px-5 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold md:md:hover:scale-105 transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
                 >
                   Learn More
                 </a>
@@ -651,14 +669,14 @@
         >
           <!-- CARD 4 -->
           <div
-            class="card bg-[#1e1b2e] rounded-2xl overflow-hidden flex flex-col w-full max-w-sm transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
+            class="card bg-[#1e1b2e] rounded-2xl overflow-hidden flex flex-col w-full max-w-[300px] md:max-w-sm transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
             data-aos="fade-up"
             data-aos-duration="1200"
             data-aos-delay="100"
             data-aos-easing="ease-out-cubic"
             data-aos-once="true"
           >
-            <div class="w-full h-48 overflow-hidden">
+            <div class="w-full h-40 md:h-48 overflow-hidden">
               <img
                 src="gambar/floraint.png"
                 class="w-full h-full object-cover transition duration-700 hover:scale-110"
@@ -676,7 +694,7 @@
               <div class="mt-auto flex justify-end pt-5">
                 <a
                   href="https://zhafira155.github.io/tugas4/"
-                  class="btn px-5 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:scale-105 transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
+                  class="btn px-5 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold md:md:hover:scale-105 transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
                 >
                   Learn More
                 </a>
@@ -685,14 +703,14 @@
           </div>
           <!-- CARD 5 -->
           <div
-            class="card bg-[#1e1b2e] rounded-2xl overflow-hidden flex flex-col w-full max-w-sm transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
+            class="card bg-[#1e1b2e] rounded-2xl overflow-hidden flex flex-col w-full max-w-[300px] md:max-w-sm transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
             data-aos="fade-up"
             data-aos-duration="1200"
             data-aos-delay="200"
             data-aos-easing="ease-out-cubic"
             data-aos-once="true"
           >
-            <div class="w-full h-48 overflow-hidden">
+            <div class="w-full h-40 md:h-48 overflow-hidden">
               <img
                 src="gambar/neon-fast.png"
                 class="w-full h-full object-cover transition duration-700 hover:scale-110"
@@ -709,7 +727,7 @@
               <div class="mt-auto flex justify-end pt-5">
                 <a
                   href="https://zhafira155.github.io/neon-fast_tugas5/"
-                  class="btn px-5 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:scale-105 transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
+                  class="btn px-5 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold md:md:hover:scale-105 transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] hover:shadow-[0_20px_50px_rgba(168,85,247,0.4)]"
                 >
                   Learn More
                 </a>
@@ -827,7 +845,11 @@
           CONTACT
         </p>
 
-        <h1 class="text-4xl font-bold text-purple-300 mt-2">Contact Us</h1>
+        <h1
+          class="text-2xl md:text-2xl md:text-3xl md:text-5xl font-bold text-purple-300 mt-2"
+        >
+          Contact Us
+        </h1>
       </div>
       <div class="max-w-[1100px] mx-auto grid md:grid-cols-2 gap-10">
         <div
@@ -836,7 +858,7 @@
           data-aos-duration="1000"
         >
           <h2
-            class="text-white text-3xl font-bold mb-6 inline-block border-b-4 border-white pb-2"
+            class="text-white text-2xl md:text-2xl md:text-2xl md:text-3xl font-bold mb-6 inline-block border-b-4 border-white pb-2"
           >
             Get In Touch
           </h2>
@@ -848,7 +870,7 @@
             >
               <a
                 href="https://maps.app.goo.gl/gKUhdi78GGFqrmco6?g_st=ac"
-                class="text-pink-500 text-3xl hover:scale-125 hover:text-pink-400 transition duration-300"
+                class="text-pink-500 text-2xl md:text-2xl md:text-2xl md:text-3xl hover:scale-125 hover:text-pink-400 transition duration-300"
               >
                 <i class="fas fa-map-marker-alt text-white text-2xl mb-1"></i>
               </a>
@@ -865,7 +887,7 @@
             >
               <a
                 href="mailto:zhafiranadyasyfa@gmail.com"
-                class="text-pink-500 text-3xl hover:scale-125 hover:text-pink-400 transition duration-300"
+                class="text-pink-500 text-2xl md:text-2xl md:text-2xl md:text-3xl hover:scale-125 hover:text-pink-400 transition duration-300"
               >
                 <i class="fas fa-envelope text-white text-2xl"></i>
               </a>
@@ -880,7 +902,7 @@
             >
               <a
                 href="https://wa.me//6285866255626"
-                class="text-pink-500 text-3xl hover:scale-125 hover:text-pink-400 transition duration-300"
+                class="text-pink-500 text-2xl md:text-2xl md:text-2xl md:text-3xl hover:scale-125 hover:text-pink-400 transition duration-300"
               >
                 <i class="fas fa-phone-alt text-white text-2xl"></i>
               </a>
@@ -916,14 +938,14 @@
               placeholder="Your Name"
               data-aos="zoom-in"
               data-aos-delay="300"
-              class="p-3 rounded-xl bg-[#1e1b2e] text-white border border-white/10 focus:outline-none focus:ring-2 focus:ring-purple-500 shadow-[0_0_20px_rgba(168,85,247,0.15)] focus:shadow-[0_0_25px_rgba(168,85,247,0.4)] transition duration-300 hover:-translate-y-1 hover:scale-[1.02]"
+              class="p-2.5 md:p-3 rounded-xl bg-[#1e1b2e] text-white border border-white/10 focus:outline-none focus:ring-2 focus:ring-purple-500 shadow-[0_0_20px_rgba(168,85,247,0.15)] focus:shadow-[0_0_25px_rgba(168,85,247,0.4)] transition duration-300 hover:-translate-y-1 hover:scale-[1.02]"
             />
             <input
               type="text"
               placeholder="Your Phone"
               data-aos="zoom-in"
               data-aos-delay="400"
-              class="p-3 rounded-xl bg-[#1e1b2e] text-white border border-white/10 focus:outline-none focus:ring-2 focus:ring-purple-500 shadow-[0_0_20px_rgba(168,85,247,0.15)] focus:shadow-[0_0_25px_rgba(168,85,247,0.4)] transition duration-300 hover:-translate-y-1 hover:scale-[1.02]"
+              class="p-2.5 md:p-3 rounded-xl bg-[#1e1b2e] text-white border border-white/10 focus:outline-none focus:ring-2 focus:ring-purple-500 shadow-[0_0_20px_rgba(168,85,247,0.15)] focus:shadow-[0_0_25px_rgba(168,85,247,0.4)] transition duration-300 hover:-translate-y-1 hover:scale-[1.02]"
             />
           </div>
           <!-- EMAIL -->
@@ -932,7 +954,7 @@
             placeholder="Your Email"
             data-aos="zoom-in"
             data-aos-delay="500"
-            class="w-full mt-2 p-3 rounded-xl bg-[#1e1b2e] text-white border border-white/10 focus:outline-none focus:ring-2 focus:ring-purple-500 shadow-[0_0_20px_rgba(168,85,247,0.15)] focus:shadow-[0_0_25px_rgba(168,85,247,0.4)] transition duration-300 hover:-translate-y-1 hover:scale-[1.02]"
+            class="w-full mt-2 p-2.5 md:p-3 rounded-xl bg-[#1e1b2e] text-white border border-white/10 focus:outline-none focus:ring-2 focus:ring-purple-500 shadow-[0_0_20px_rgba(168,85,247,0.15)] focus:shadow-[0_0_25px_rgba(168,85,247,0.4)] transition duration-300 hover:-translate-y-1 hover:scale-[1.02]"
           />
           <br />
           <!-- MESSAGE -->
@@ -941,7 +963,7 @@
             placeholder="Your Message"
             data-aos="zoom-in"
             data-aos-delay="600"
-            class="w-full mt-2 p-3 rounded-xl bg-[#1e1b2e] text-white border border-white/10 focus:outline-none focus:ring-2 focus:ring-purple-500 shadow-[0_0_20px_rgba(168,85,247,0.15)] focus:shadow-[0_0_25px_rgba(168,85,247,0.4)] transition duration-300 hover:-translate-y-1 hover:scale-[1.01]"
+            class="w-full mt-2 p-2.5 md:p-3 rounded-xl bg-[#1e1b2e] text-white border border-white/10 focus:outline-none focus:ring-2 focus:ring-purple-500 shadow-[0_0_20px_rgba(168,85,247,0.15)] focus:shadow-[0_0_25px_rgba(168,85,247,0.4)] transition duration-300 hover:-translate-y-1 hover:scale-[1.01]"
           ></textarea>
           <br />
           <button
@@ -956,15 +978,19 @@
     </section>
     <footer class="bg-[#280C4F] w-full">
       <div
-        class="max-w-6xl mx-auto px-6 md:px-10 py-8 grid grid-cols-1 md:grid-cols-[1.7fr_0.8fr_1fr] gap-10"
+        class="max-w-6xl mx-auto px-6 md:px-10 py-8 grid grid-cols-1 md:grid-cols-[1.7fr_0.8fr_1fr] gap-8 md:gap-10"
       >
         <div>
-          <h2 class="logo text-3xl text-white">Zhira</h2>
+          <h2
+            class="logo text-2xl md:text-2xl md:text-2xl md:text-3xl text-white"
+          >
+            Zhira
+          </h2>
 
           <p class="text-white text-sm mt-1">About Us</p>
 
           <p
-            class="text-gray-300 text-sm leading-relaxed mt-1 text-justify max-w-[420px]"
+            class="text-gray-300 text-sm leading-relaxed mt-1 text-justify max-w-full md:max-w-[420px]"
           >
             Students who are learning web development with a focus on HTML, CSS,
             and JavaScript as well as responsive website design.
